@@ -1,4 +1,4 @@
-main.o: main.cp employee.h map_template.h
+main.o: main.cpp employee.h map_template.h
 	g++ -g -c -Wall $< -o $@
 .Phony: clean
 
