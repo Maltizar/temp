@@ -6,11 +6,11 @@ using namespace std;
 
 int main()
 {
-    try
-    {
+    //try
+    //{
         typedef unsigned int ID;
         map_template<ID, Employee> Database;
-        Database.add(761028073, Employee("Jan Kowalski", "salesman", 28));
+       /* Database.add(761028073, Employee("Jan Kowalski", "salesman", 28));
         Database.add(510212881, Employee("Adam Nowak", "storekeeper", 54));
         Database.add(730505129, Employee("Anna Zaradna", "secretary", 32));
         cout << Database << endl;
@@ -33,5 +33,5 @@ int main()
 		cout << "Out of Memory" << endl;
 	}
 
-	return 0;
+	return 0;*/
 }
