@@ -6,17 +6,15 @@ using namespace std;
 
 int main()
 {
-    //try
-    //{
+    try
+    {
         typedef unsigned int ID;
         map_template<ID, Employee> Database;
         Database.add(761028073, Employee("Jan Kowalski", "salesman", 28));
         Database.add(510212881, Employee("Adam Nowak", "storekeeper", 54));
         Database.add(730505129, Employee("Anna Zaradna", "secretary", 32));
-        cout << Database << endl;
-/*
-        map_template<ID, Employee> NewDatabase=Database;
 
+        map_template<ID, Employee> NewDatabase=Database;
         Employee* pE;
         pE = NewDatabase.find(510212881);
         pE->position = "salesman";
@@ -25,7 +23,7 @@ int main()
         pE = NewDatabase.find(730505129);
         pE->full_name = "Ania Zaradna";
         Database = NewDatabase;
-        cout << Database << endl;
+	cout << NewDatabase << endl;
     }
 
 	catch(bad_alloc)
@@ -33,5 +31,5 @@ int main()
 		cout << "Out of Memory" << endl;
 	}
 
-	return 0;*/
+	return 0;
 }

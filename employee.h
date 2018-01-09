@@ -5,11 +5,11 @@ using namespace std;
 
 class Employee
 {
-	private:
+	public:
 		string full_name;
 		string position;
 		int age;
-	public:
+	friend ostream& operator << (ostream&, Employee);
 	Employee(string fn="NULL", string po="NULL", int ag=0)
 	{
 		full_name=fn;
@@ -19,4 +19,9 @@ class Employee
 	~Employee()
 	{
 	}
+};
+ostream& operator << (ostream& os, Employee em)
+{
+	os << em.full_name <<" "<< em.position << " " << em.age;
+	return os;
 };
